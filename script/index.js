@@ -18,6 +18,11 @@ function continueGame(){
     // step-1: generate a randome alphabet
     const alphabet = getARandomAlphabet()
     console.log('random alphabet', alphabet)
+
+    // set random alphabet to the screen (show it)
+    const currentAlphabetElement = document.getElementById('current-alphabet');
+    currentAlphabetElement.innerText = alphabet
+    setBackgroundColor(alphabet)
 }
 
 function play(){

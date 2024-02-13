@@ -3,10 +3,12 @@ function hideElementById(elementId) {
     element.classList.add('hidden')
 }
 
+
 function showElementById(elementId) {
     const element = document.getElementById(elementId)
     element.classList.remove('hidden')
 }
+
 
 function getARandomAlphabet() {
     // get or create an alphabet array
@@ -21,4 +23,10 @@ function getARandomAlphabet() {
     const alphabet = alphabets[index]
     // console.log(index , alphabet)
     return alphabet
+}
+
+
+function setBackgroundColor(elementId){
+    const element = document.getElementById(elementId)
+    element.classList.add('bg-orange-400')
 }
