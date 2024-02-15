@@ -78,37 +78,40 @@
             <!-- keybord end -->
             <!-- life score -->
             <div class="flex justify-between  w-3/4">
-                <button class="btn rounded-full bg-[#9c419c] border-none px-8 py-4">
+                <!-- life -->
+                <button class="btn rounded-full bg-[#9c419c] border-none px-8 py-4 text-white hover:text-black">
                     life
                     <img src="images/heartsvg.svg" alt="">
-                    <span>1</span>
+                    <span id="current-life">5</span>
                  
                   </button>
-                  <button class="btn rounded-full bg-[#360490] border-none px-8 py-4">
+                  <!-- score -->
+                  <button class="btn rounded-full bg-[#360490] border-none px-8 py-4 text-white hover:text-black">
                     score
                     <img src="images/dolarsvg.svg" alt="">
-                    <span>1</span>
+                    <span id="current-score">0</span>
                
                   </button>
             </div>
           </div>
         </section>
-
         <!-- playgroound  end   -->
+
         <!-- final score and play again -->
-        <section class="score flex justify-center items-center min-h-screen hidden ">
+        <section id="final-score" class=" flex justify-center items-center min-h-screen hidden ">
             <div class="text-white flex flex-col justify-center items-center gap-4 bg-[#FFFFFF12] p-4 rounded-xl ">
+                <h4 class="text-3xl">Game over</h4>
                 <h1 class="text-8xl">
-                    <span class="font-extrabold">Score:</span> <span>14</span>
+                    <span class="font-extrabold">Score:</span> <span id="last-score">14</span>
                 </h1>
-                <button class="btn ">Play Again</button>
+                <button onclick="play()" class="btn ">Play Again</button>
                 <p>Practice will make you a pro </p>
             </div>
 
         </section>
     </main>
-    <script src="script/utility.js"></script>
     <script src="script/index.js"></script>
+    <script src="script/utility.js"></script>
 </body>
 
 </html>
